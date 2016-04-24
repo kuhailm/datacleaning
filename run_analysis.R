@@ -87,7 +87,7 @@ run_analysis<- function() {
   
   #Write the final, tidy dataset to a text file
   
-  write.table(final_set, "setmeans.txt")
+  write.table(final_set, "setmeans.txt", row.names = FALSE, quote = FALSE)
   View(final_set)
 
 }
